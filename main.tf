@@ -12,7 +12,7 @@ resource "aws_route53_record" "prom-record" {
   type            = "CNAME"
   zone_id         = var.zone_id
 
-  records = var.elb_host_name
+  records = [var.elb_host_name]
 }
 
 resource "aws_route53_record" "graf-record" {
@@ -22,7 +22,7 @@ resource "aws_route53_record" "graf-record" {
   type            = "CNAME"
   zone_id         = var.zone_id
 
-  records = var.elb_host_name
+  records = [var.elb_host_name]
 }
 
 resource "aws_route53_record" "alertman-record" {
@@ -32,5 +32,5 @@ resource "aws_route53_record" "alertman-record" {
   type            = "CNAME"
   zone_id         = var.zone_id
 
-  records = var.elb_host_name
+  records = [var.elb_host_name]
 }
