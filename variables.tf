@@ -9,4 +9,6 @@ variable "region" {
   default = "us-east-1"
 }
 
-variable "elb_host_name" {}
+variable "elb_host_name" {
+  default = "elb"
+}
