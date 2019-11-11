@@ -1,14 +1,14 @@
 variable "zone_id" {
-  default = ""
+  type = string
 }
 variable "root_domain_name" {
-  default = "aws.patchnotes.xyz"
+  type = string
 }
 
 variable "region" {
-  default = "us-east-1"
+  type = string
 }
 
 variable "elb_host_name" {
-  default = "elb"
+  type = string
 }
